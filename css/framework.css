@@ -23,6 +23,11 @@
     display: grid;
 }
 
+.gap-20 {
+    gap: 20px;
+}
+
+
 /* widths */
 
 .w-full {
@@ -70,12 +75,20 @@
     margin-top: 0;
 }
 
+.mr-20 {
+    margin-right: 20px;
+}
+
 .ml-5 {
     margin-left: 5px;
 }
 
 .ml-15 {
     margin-left: 15px;
+}
+
+.ml-20 {
+    margin-left: 20px;
 }
 
 .mb-5 {
@@ -128,6 +141,12 @@
 @media (max-width: 767px) {
     .hide-mo {
         display: none;
+    }
+    .block-mobile {
+        display: block;
+    }
+    .txt-c-mobile {
+        text-align: center;
     }
 }
 
