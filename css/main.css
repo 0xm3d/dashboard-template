@@ -5,6 +5,7 @@
     --green-color: #22c55e;
     --red-color: #f44336;
     --grey-color: #888;
+    --main-transition: var(--main-transition);
 }
 
 * {
@@ -87,7 +88,7 @@ a {
 }
 
 .sidebar ul li a {
-    transition: 0.3s;
+    transition: var(--main-transition);
 }
 
 .sidebar ul li a.active,
@@ -127,7 +128,7 @@ a {
 .head .search input[type="search"] {
     padding-left: 35px;
     width: 160px;
-    transition: width 0.3s;
+    transition: width var(--main-transition);
 }
 
 .head .search input[type="search"]:focus {
@@ -184,4 +185,56 @@ a {
     margin-right: 10px;
     margin-left: 10px;
 }
+}
+
+/* ========== Welcome ========== */
+
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .intro img {
+    width: 170px;
+    margin-bottom: -10px;
+}
+
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 20px;
+    margin-top: -32px;
+}
+
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .body > div {
+    flex: 1;
+}
+
+.welcome .visit {
+    margin: 0 15px 15px auto;
+    transition: var(--main-transition);
+}
+
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width: 767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+    .welcome .avatar {
+        margin-left: 0;
+    }
+    .welcome .body > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
