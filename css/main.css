@@ -238,3 +238,44 @@ a {
         margin-bottom: 20px;
     }
 }
+
+/* ========== Draft ========== */
+
+.draft .inputs textarea {
+    height: 180px;
+    resize: none;
+}
+
+.draft .inputs input[type="text"]:focus,
+.draft .inputs textarea:focus {
+    caret-color: var(--blue-color);
+    transition: var(--main-transition);
+}
+
+.draft .inputs input[type="text"]::placeholder,
+.draft .inputs textarea::placeholder {
+    transition: 0.6s;
+}
+
+.draft .inputs input[type="text"]:focus::placeholder,
+.draft .inputs textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.draft input[type="submit"] {
+    margin-left: auto;
+    transition: var(--main-transition);
+}
+
+.draft input[type="submit"]:hover {
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width: 767px) {
+    .draft h2 {
+        margin-bottom: 10px;
+    }
+    .draft p {
+        margin-bottom: 20px;
+    }
+}
