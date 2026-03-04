@@ -136,6 +136,10 @@
     margin-left: 20px;
 }
 
+.mb-0 {
+    margin-bottom: 0;
+}
+
 .mb-5 {
     margin-bottom: 5px;
 }
@@ -166,6 +170,10 @@
 
 /* borders */
 
+.br-0 {
+    border: none;
+}
+
 .b-ccc {
     border: 1px solid #ccc;
 }
@@ -177,7 +185,6 @@
 .rad-10 {
     border-radius: 10px;
 }
-
 
 /* overflow */
 
@@ -209,4 +216,5 @@
 
 .btn-shape {
     padding: 5px 10px;
+    border-radius: 6px;
 }
