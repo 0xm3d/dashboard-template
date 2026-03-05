@@ -279,3 +279,91 @@ a {
         margin-bottom: 20px;
     }
 }
+
+/* ========== Targets ========== */
+
+.targets .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.targets .blue .icon {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.targets .orange .icon {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.targets .green .icon {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.targets .target-row .details .progress {
+    height: 4px;
+}
+
+.targets .blue .details .progress {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.targets .orange .details .progress {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.targets .green .details .progress {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.targets .target-row .details .progress span {
+    position: absolute;
+    height: inherit;
+    top: 0;
+    left: 0;
+}
+
+.targets .target-row .details .progress span::before {
+    position: absolute;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 6px;
+    top: -35px;
+    right: -21px;
+    color: white;
+}
+
+.targets .blue .details .progress span::before {
+    content: "80%";
+    background-color: var(--blue-color);
+}
+
+.targets .orange .details .progress span::before {
+    content: "55%";
+    background-color: var(--orange-color);
+}
+
+.targets .green .details .progress span::before {
+    content: "75%";
+    background-color: var(--green-color);
+}
+
+.targets .target-row .details .progress span::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: -9px;
+    border: 5px solid blue;
+}
+
+.targets .blue .details .progress span::after {
+    border-color: var(--blue-color) transparent transparent ;
+}
+
+.targets .orange .details .progress span::after {
+    border-color: var(--orange-color) transparent transparent ;
+}
+
+.targets .green .details .progress span::after {
+    border-color: var(--green-color) transparent transparent ;
+}
