@@ -265,6 +265,7 @@ a {
 .draft input[type="submit"] {
     margin-left: auto;
     transition: var(--main-transition);
+    cursor: pointer;
 }
 
 .draft input[type="submit"]:hover {
@@ -377,5 +378,29 @@ a {
 @media (max-width: 767px) {
     .tickets .container .box {
     width: 100%;
+}
+}
+
+/* ========== News ========== */
+
+.news .box img {
+    width: 100px;
+}
+
+.news .box .label {
+    margin: auto 0 auto auto;
+}
+
+.news .box:not(:last-of-type) {
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+    .news .box {
+    display: block;
+    padding: 20px;
+    }
+    .news .box .label {
+    margin: 5px auto 15px;
 }
 }
