@@ -367,3 +367,15 @@ a {
 .targets .green .details .progress span::after {
     border-color: var(--green-color) transparent transparent ;
 }
+
+/* ========== Tickets ========== */
+
+.tickets .container .box {
+    width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+    .tickets .container .box {
+    width: 100%;
+}
+}
