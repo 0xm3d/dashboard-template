@@ -39,6 +39,10 @@
     flex: 1;
 }
 
+.f-wr {
+    flex-wrap: wrap;
+}
+
 /* widths */
 
 .w-full {
@@ -78,6 +82,10 @@
 
 .c-green {
     color: var(--green-color);
+}
+
+.c-red {
+    color: var(--red-color);
 }
 
 .bg-white {
@@ -191,8 +199,16 @@
     text-transform: capitalize;
 }
 
+.fs-13 {
+    font-size: 13px;
+}
+
 .fs-14 {
     font-size: 14px;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 
 .bold  {
