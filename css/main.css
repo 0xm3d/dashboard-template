@@ -393,6 +393,8 @@ a {
 
 .news .box:not(:last-of-type) {
     border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 @media (max-width: 767px) {
@@ -403,4 +405,21 @@ a {
     .news .box .label {
     margin: 5px auto 15px;
 }
+}
+
+/* ========== Tasks ========== */
+
+.tasks .task-row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.tasks .task-row:nth-of-type(4) .box {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.tasks .task-row:nth-of-type(4) i {
+    opacity: 0.5;
 }
