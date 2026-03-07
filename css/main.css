@@ -423,3 +423,14 @@ a {
 .tasks .task-row:nth-of-type(4) i {
     opacity: 0.5;
 }
+
+/* ========== Uploads ========== */
+
+.uploads .box img {
+    width: 40px;
+    height: 40px;
+}
+
+.uploads .upload-row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
