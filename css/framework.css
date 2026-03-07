@@ -127,6 +127,10 @@
     padding: 20px;
 }
 
+.pt-15 {
+    padding-top: 15px;
+}
+
 .pb-15 {
     padding-bottom: 15px;
 }
@@ -157,6 +161,10 @@
 
 .mt-20 {
     margin-top: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
 }
 
 .mr-15 {
@@ -221,6 +229,10 @@
 
 .fs-14 {
     font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
 }
 
 .fs-16 {
