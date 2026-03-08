@@ -434,3 +434,60 @@ a {
 .uploads .upload-row:not(:last-of-type) {
     border-bottom: 1px solid #eee;
 }
+
+/* ========== Project Progress ========== */
+
+.project-prog ul::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 30px);
+    top: 15px;
+    background-color: var(--blue-color);
+    z-index: 0;
+}
+
+.project-prog ul li {
+    position: relative;
+    padding: 15px 0 15px 20px;
+}
+
+.project-prog ul li::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    outline: 2px solid var(--blue-color);
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    z-index: 1;
+}
+
+.project-prog ul li:nth-child(-n+3)::before {
+    background-color: var(--blue-color);
+}
+
+.project-prog ul li:nth-of-type(4)::before {
+    animation: w-blink 1s infinite alternate; 
+}
+
+.project-prog img {
+    position: absolute;
+    width: 160px;
+    opacity: 0.3;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes w-blink {
+    from {
+        background-color: var(--blue-color)
+    }
+    to {
+        background-color: white
+    }
+}
