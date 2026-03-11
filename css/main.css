@@ -491,3 +491,26 @@ a {
         background-color: white
     }
 }
+
+/* ========== Reminders ========== */
+
+.reminders ul li .dot {
+    width: 15px;
+    height: 15px;
+}
+
+.reminders ul .blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul .green {
+    border-left: 2px solid var(--green-color);
+}
+
+.reminders ul .orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul .red {
+    border-left: 2px solid var(--red-color);
+}
