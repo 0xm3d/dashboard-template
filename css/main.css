@@ -514,3 +514,17 @@ a {
 .reminders ul .red {
     border-left: 2px solid var(--red-color);
 }
+
+/* ========== Post ========== */
+
+.post .box img {
+    width: 48px;
+    height: 48px;
+}
+
+.post .text {
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    min-height: 140px;
+    line-height: 1.8;
+}
