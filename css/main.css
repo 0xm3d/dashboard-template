@@ -528,3 +528,59 @@ a {
     min-height: 140px;
     line-height: 1.8;
 }
+
+/* ========== Social Media ========== */
+
+.socials .row  i {
+    position: absolute;
+    width: 52px;
+    transition: var(--main-transition);
+}
+
+.socials .row  i:hover {
+    transform: rotate(6deg);
+}
+
+.socials .row .stats > div {
+    margin-left: 57px;
+}
+
+.socials .twitter {
+    background-color: rgb(29 161 242 / 20%);
+    color: #1da1f2;
+}
+
+.socials .twitter i,
+.socials .twitter button {
+    background-color: #1da1f2;
+}
+
+.socials .facebook {
+    background-color: rgb(24 116 242 / 20%);
+    color: #1da1f2;
+}
+
+.socials .facebook i,
+.socials .facebook button {
+    background-color: #1877F2;
+}
+
+.socials .youtube {
+    background-color: rgb(255 0 0 / 20%);
+    color: #ff0000;
+}
+
+.socials .youtube i,
+.socials .youtube button {
+    background-color: #FF0000;
+}
+
+.socials .linkedin {
+    background-color: rgb(0 119 181 / 20%);
+    color: #0077b5;
+}
+
+.socials .linkedin i,
+.socials .linkedin button {
+    background-color: #0077B5;
+}
