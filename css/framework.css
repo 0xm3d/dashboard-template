@@ -47,10 +47,14 @@
     flex-wrap: wrap;
 }
 
-/* widths */
+/* widths & heights */
 
 .w-full {
     width: 100%;
+}
+
+.h-full {
+    height: 100%;
 }
 
 .icon-32 {
