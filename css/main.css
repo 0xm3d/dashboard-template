@@ -584,3 +584,76 @@ a {
 .socials .linkedin button {
     background-color: #0077B5;
 }
+
+/* ========== Projects ========== */
+
+.projects table {
+    border-right: 1px solid #EEEEEE;
+    border-spacing: 0;
+    min-width: 1000px;
+    
+     thead {
+        background-color: #EEEEEE;
+     }
+
+     thead tr td {
+        font-weight: bold;
+     }
+     
+     td {
+        padding: 15px;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+     }
+}
+
+.projects table tbody tr td img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.projects table tbody tr td img:nth-of-type(2) {
+    transform: translateX(-20px);
+}
+
+.projects table tbody tr td img:nth-of-type(3) {
+    transform: translateX(-40px);
+}
+
+.projects table tbody tr td img:nth-of-type(4) {
+    transform: translateX(-60px);
+}
+
+.projects table tbody tr td span {
+    color: white;
+}
+
+.projects table tbody tr td .pending {
+    background-color: var(--orange-color);
+}
+
+.projects table tbody tr td .in-prog {
+    background-color: var(--blue-color);
+} 
+
+.projects table tbody tr td .comp {
+    background-color: var(--green-color);
+}
+
+.projects table tbody tr td .rejected {
+    background-color: var(--red-color);
+}
+
+.projects table tbody tr {
+    transition: var(--main-transition);
+}
+
+.projects table tbody tr:hover {
+    background-color: #FAF7F7;
+}
+
+.projects .responsive-table {
+    overflow-x: auto
+}
