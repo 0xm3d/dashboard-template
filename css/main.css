@@ -703,3 +703,20 @@ a {
     color: var(--blue-color);
     left: 50px;
 }
+
+/* ========== Info ========== */
+
+.gen-info input {
+    caret-color: var(--blue-alt-color);
+}
+
+.gen-info input[type="text"]::placeholder {
+    color: var(--grey-color);
+}
+
+.gen-info input[type="email"] {
+    background-color: #f0f4f8;
+    color: #bbb;
+    cursor: no-drop;
+    width: calc(100% - 80px);
+}
