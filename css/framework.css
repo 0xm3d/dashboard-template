@@ -306,6 +306,12 @@
     overflow: hidden;
 }
 
+/* cursor */
+
+.pointer {
+    cursor: pointer;
+}
+
 /* mobile */
 
 @media (max-width: 767px) {
