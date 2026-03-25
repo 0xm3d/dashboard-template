@@ -720,3 +720,13 @@ a {
     cursor: no-drop;
     width: calc(100% - 80px);
 }
+
+/* ========== Sec ========== */
+
+.sec div label {
+    align-self: center;
+}
+
+.sec div:not(:last-of-type) {
+    border-bottom: 1px solid #bbb;
+}
