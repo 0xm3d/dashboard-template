@@ -35,6 +35,10 @@
     display: inline;
 }
 
+.d-inline-flex {
+    display: inline-flex;
+}
+
 .gap-20 {
     gap: 20px;
 }
