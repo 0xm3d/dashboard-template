@@ -4,7 +4,7 @@
     --orange-color: #f59e0b;
     --green-color: #22c55e;
     --red-color: #f44336;
-    --grey-color: #888;
+    --gray-color: #888;
     --main-transition: 0.3s;
 }
 
@@ -119,7 +119,7 @@ a {
     font-family: var(--fa-style-family-classic);
     font-weight: 900;
     font-size: 14px;
-    color: var(--grey-color);
+    color: var(--gray-color);
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
@@ -711,7 +711,7 @@ a {
 }
 
 .gen-info input[type="text"]::placeholder {
-    color: var(--grey-color);
+    color: var(--gray-color);
 }
 
 .gen-info input[type="email"] {
