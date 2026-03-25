@@ -6,7 +6,7 @@
     --orange-color: #f59e0b;
     --green-color: #22c55e;
     --red-color: #f44336;
-    --grey-color: #888;
+    --gray-color: #888;
 }
 
 /* box styling */
@@ -80,8 +80,8 @@
     color: white;
 }
 
-.c-grey {
-    color: var(--grey-color);
+.c-gray {
+    color: var(--gray-color);
 }
 
 .c-blue {
