@@ -730,3 +730,33 @@ a {
 .sec div:not(:last-of-type) {
     border-bottom: 1px solid #bbb;
 }
+
+/* ========== Social Info ========== */
+
+.social-info div {
+    background-color: #F6F6F6;
+    border: 1px solid #d0d0d0;
+}
+
+.social-info div span {
+    border-right: 1px solid #d0d0d0;
+    order: 1;
+}
+
+.social-info div input {
+    order: 2;
+    background-color: #f6f6f6;
+}
+
+.social-info div input::placeholder {
+    color: var(--gray-color);
+}
+
+.social-info div span i {
+    opacity: 0.3;
+    transition: var(--main-transition);
+}
+
+.social-info div input:focus ~ span i {
+    opacity: 1;
+}
