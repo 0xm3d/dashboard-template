@@ -812,3 +812,50 @@ a {
     margin-top: -9px;
     border-radius: 4px;
 }
+
+/* ========== Backup Manager ========== */
+
+.back-up li input[type="radio"] {
+    appearance: none;
+}
+
+.back-up li label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.back-up li label::before {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--gray-color);
+    left: 0;
+    top: 50%;
+}
+
+.back-up li input[type="radio"]:checked + label::before {
+    border-color: var(--blue-color);
+}
+
+.back-up li label::after {
+    background-color: var(--blue-color);
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(360deg);
+    transition: var(--main-transition);
+}
+
+.back-up li input[type="radio"]:checked + label::after {
+    transform: scale(1);
+    border-color: var(--blue-alt-color);
+}
+
+.back-up li label::before,
+.back-up li label::after {
+    content: '';
+    position: absolute;
+    margin-top: -9px;
+    border-radius: 50%;
+}
