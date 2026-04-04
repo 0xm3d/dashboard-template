@@ -815,7 +815,7 @@ a {
 
 /* ========== Backup Manager ========== */
 
-.back-up li input[type="radio"] {
+.back-up input[type="radio"] {
     appearance: none;
 }
 
@@ -858,4 +858,14 @@ a {
     position: absolute;
     margin-top: -9px;
     border-radius: 50%;
+}
+
+.back-up .servers {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.back-up .servers div {
+    border: 1px solid #ddd;
 }
