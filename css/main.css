@@ -860,3 +860,27 @@ a {
     border-radius: 50%;
 }
 
+.back-up .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .back-up .servers {
+        flex-wrap: wrap;
+    }
+}
+
+.back-up .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+}
+
+.back-up .servers .server label {
+    cursor: pointer;
+}
+
+.back-up .servers input[type="radio"]:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
