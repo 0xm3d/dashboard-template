@@ -860,12 +860,3 @@ a {
     border-radius: 50%;
 }
 
-.back-up .servers {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 20px;
-}
-
-.back-up .servers div {
-    border: 1px solid #ddd;
-}
