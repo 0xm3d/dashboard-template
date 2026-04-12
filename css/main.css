@@ -884,3 +884,30 @@ a {
     border-color: var(--blue-color);
     color: var(--blue-color);
 }
+
+/* Profile Page  */
+
+.profile-page .avatar-box {
+
+}
+
+.profile-page .avatar-box > img {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-page .avatar-box .level {
+    height: 6px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+}
+
+.profile-page .avatar-box .level span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+}
