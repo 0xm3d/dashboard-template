@@ -888,7 +888,13 @@ a {
 /* Profile Page  */
 
 .profile-page .avatar-box {
+    width: 300px;
+}
 
+@media (min-width: 768px) {
+    .profile-page .avatar-box {
+    border-right: 1px solid #eee;
+}
 }
 
 .profile-page .avatar-box > img {
