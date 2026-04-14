@@ -58,33 +58,34 @@ a {
     box-shadow: 0 0 10px #ddd;
 }
 
-.sidebar > h3 {
+.sidebar>h3 {
     margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
-    .sidebar > h3::before,
-    .sidebar > h3::after {
-    content: "";
-    position: absolute;
-    background-color: black;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.sidebar > h3::before {
-    width: 50%;
-    height: 3px;
-    bottom: -20px;
-}
+    .sidebar>h3::before,
+    .sidebar>h3::after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-.sidebar > h3::after {
-    width: 12px;
-    height: 12px;
-    border: 4px solid white;
-    border-radius: 50%;
-    bottom: -29px;
-}
+    .sidebar>h3::before {
+        width: 50%;
+        height: 3px;
+        bottom: -20px;
+    }
+
+    .sidebar>h3::after {
+        width: 12px;
+        height: 12px;
+        border: 4px solid white;
+        border-radius: 50%;
+        bottom: -29px;
+    }
 }
 
 .sidebar ul li a {
@@ -105,7 +106,8 @@ a {
         width: 58px;
         padding: 10px;
     }
-    .sidebar > h3 {
+
+    .sidebar>h3 {
         font-size: 13px;
         margin-bottom: 15px;
     }
@@ -180,11 +182,11 @@ a {
 
 @media (max-width: 767px) {
     .wrapper {
-    grid-template-columns: minmax(200px, 1fr);
-    gap: 10px ;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }
 
 /* ========== Welcome ========== */
@@ -214,7 +216,7 @@ a {
     border-bottom: 1px solid #eee;
 }
 
-.welcome .body > div {
+.welcome .body>div {
     flex: 1;
 }
 
@@ -231,10 +233,12 @@ a {
     .welcome .intro {
         padding-bottom: 30px;
     }
+
     .welcome .avatar {
         margin-left: 0;
     }
-    .welcome .body > div:not(:last-child) {
+
+    .welcome .body>div:not(:last-child) {
         margin-bottom: 20px;
     }
 }
@@ -276,6 +280,7 @@ a {
     .draft h2 {
         margin-bottom: 10px;
     }
+
     .draft p {
         margin-bottom: 20px;
     }
@@ -358,15 +363,15 @@ a {
 }
 
 .targets .blue .details .progress span::after {
-    border-color: var(--blue-color) transparent transparent ;
+    border-color: var(--blue-color) transparent transparent;
 }
 
 .targets .orange .details .progress span::after {
-    border-color: var(--orange-color) transparent transparent ;
+    border-color: var(--orange-color) transparent transparent;
 }
 
 .targets .green .details .progress span::after {
-    border-color: var(--green-color) transparent transparent ;
+    border-color: var(--green-color) transparent transparent;
 }
 
 /* ========== Tickets ========== */
@@ -377,8 +382,8 @@ a {
 
 @media (max-width: 767px) {
     .tickets .container .box {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 /* ========== News ========== */
@@ -399,12 +404,13 @@ a {
 
 @media (max-width: 767px) {
     .news .box {
-    display: block;
-    padding: 20px;
+        display: block;
+        padding: 20px;
     }
+
     .news .box .label {
-    margin: 5px auto 15px;
-}
+        margin: 5px auto 15px;
+    }
 }
 
 /* ========== Tasks ========== */
@@ -472,7 +478,7 @@ a {
 }
 
 .project-prog ul li:nth-of-type(4)::before {
-    animation: w-blink 1s infinite alternate; 
+    animation: w-blink 1s infinite alternate;
 }
 
 .project-prog img {
@@ -487,6 +493,7 @@ a {
     from {
         background-color: var(--blue-color)
     }
+
     to {
         background-color: white
     }
@@ -531,17 +538,17 @@ a {
 
 /* ========== Social Media ========== */
 
-.socials .row  i {
+.socials .row i {
     position: absolute;
     width: 52px;
     transition: var(--main-transition);
 }
 
-.socials .row  i:hover {
+.socials .row i:hover {
     transform: rotate(6deg);
 }
 
-.socials .row .stats > div {
+.socials .row .stats>div {
     margin-left: 57px;
 }
 
@@ -626,18 +633,37 @@ a {
     border: 1px solid white;
 }
 
-.projects table tbody tr td img:nth-of-type(2) { transform: translateX(-20px); }
-.projects table tbody tr td img:nth-of-type(3) { transform: translateX(-40px); }
-.projects table tbody tr td img:nth-of-type(4) { transform: translateX(-60px); }
+.projects table tbody tr td img:nth-of-type(2) {
+    transform: translateX(-20px);
+}
+
+.projects table tbody tr td img:nth-of-type(3) {
+    transform: translateX(-40px);
+}
+
+.projects table tbody tr td img:nth-of-type(4) {
+    transform: translateX(-60px);
+}
 
 .projects table tbody tr td span {
     color: white;
 }
 
-.projects table tbody tr td .pending  { background-color: var(--orange-color); }
-.projects table tbody tr td .in-prog  { background-color: var(--blue-color);   }
-.projects table tbody tr td .comp     { background-color: var(--green-color);  }
-.projects table tbody tr td .rejected { background-color: var(--red-color);    }
+.projects table tbody tr td .pending {
+    background-color: var(--orange-color);
+}
+
+.projects table tbody tr td .in-prog {
+    background-color: var(--blue-color);
+}
+
+.projects table tbody tr td .comp {
+    background-color: var(--green-color);
+}
+
+.projects table tbody tr td .rejected {
+    background-color: var(--red-color);
+}
 
 /* ========== Settings ========== */
 
@@ -693,11 +719,11 @@ a {
     transition: var(--main-transition);
 }
 
-.toggle-checkbox:checked + .toggle-switch {
+.toggle-checkbox:checked+.toggle-switch {
     background-color: var(--blue-color);
 }
 
-.toggle-checkbox:checked + .toggle-switch::before {
+.toggle-checkbox:checked+.toggle-switch::before {
     content: "\f00c";
     background-color: white;
     color: var(--blue-color);
@@ -757,7 +783,7 @@ a {
     transition: var(--main-transition);
 }
 
-.social-info div input:focus ~ span i {
+.social-info div input:focus~span i {
     opacity: 1;
 }
 
@@ -785,7 +811,7 @@ a {
 }
 
 .wid-control .control label::after {
-    font-family: var(--fa-style-family-classic); 
+    font-family: var(--fa-style-family-classic);
     content: "\f00c";
     font-weight: 900;
     background-color: var(--blue-color);
@@ -800,7 +826,7 @@ a {
     transition: var(--main-transition);
 }
 
-.wid-control .control input[type="checkbox"]:checked + label::after {
+.wid-control .control input[type="checkbox"]:checked+label::after {
     transform: scale(1);
 }
 
@@ -833,7 +859,7 @@ a {
     top: 50%;
 }
 
-.back-up li input[type="radio"]:checked + label::before {
+.back-up li input[type="radio"]:checked+label::before {
     border-color: var(--blue-color);
 }
 
@@ -847,7 +873,7 @@ a {
     transition: var(--main-transition);
 }
 
-.back-up li input[type="radio"]:checked + label::after {
+.back-up li input[type="radio"]:checked+label::after {
     transform: scale(1);
     border-color: var(--blue-alt-color);
 }
@@ -880,24 +906,31 @@ a {
     cursor: pointer;
 }
 
-.back-up .servers input[type="radio"]:checked + .server {
+.back-up .servers input[type="radio"]:checked+.server {
     border-color: var(--blue-color);
     color: var(--blue-color);
 }
 
 /* Profile Page  */
 
+@media (max-width: 767px) {
+    .profile-page .overview  {
+        flex-direction: column;
+    }
+}
+
 .profile-page .avatar-box {
     width: 300px;
 }
 
+
 @media (min-width: 768px) {
     .profile-page .avatar-box {
-    border-right: 1px solid #eee;
-}
+        border-right: 1px solid #eee;
+    }
 }
 
-.profile-page .avatar-box > img {
+.profile-page .avatar-box>img {
     width: 120px;
     height: 120px;
 }
