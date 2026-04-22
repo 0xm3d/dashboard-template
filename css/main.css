@@ -914,7 +914,7 @@ a {
 /* Profile Page  */
 
 @media (max-width: 767px) {
-    .profile-page .overview  {
+    .profile-page .overview {
         flex-direction: column;
     }
 }
@@ -961,7 +961,7 @@ a {
     background-color: #f9f9f9;
 }
 
-.profile-page .info-box .box > div {
+.profile-page .info-box .box>div {
     min-width: 250px;
     padding: 10px 0 0;
 }
@@ -972,4 +972,20 @@ a {
 
 .profile-page .info-box .toggle-switch {
     height: 20px;
+}
+
+@media (max-width: 767px) {
+    .profile-page .info-box .toggle-switch {
+        margin: auto;
+    }
+}
+
+.profile-page .info-box .toggle-switch::before {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+}
+
+.profile-page .info-box .toggle-checkbox:checked+.toggle-switch::before {
+    left: 62px;
 }
