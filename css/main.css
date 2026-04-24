@@ -989,3 +989,37 @@ a {
 .profile-page .info-box .toggle-checkbox:checked+.toggle-switch::before {
     left: 62px;
 }
+
+@media (max-width: 767px) {
+    .profile-page .other-data {
+        flex-direction: column;
+    }
+}
+
+.profile-page .skills-card {
+    flex-grow: 1;
+}
+
+.profile-page .skills-card ul li {
+    padding: 15px 0;
+}
+
+.profile-page .skills-card ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.profile-page .skills-card ul li span {
+    display: inline-flex;
+    padding: 4px 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.profile-page .skills-card ul li span:not(:last-child) {
+    margin-right: 5px;
+}
+
+.profile-page .activities {
+    flex-grow: 2;
+}
