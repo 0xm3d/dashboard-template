@@ -1023,3 +1023,36 @@ a {
 .profile-page .activities {
     flex-grow: 2;
 }
+
+.profile-page .activity:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-page .activity img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .profile-page .activity .date {
+        margin-left: auto;
+        text-align: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-page .activity {
+        flex-direction: column;
+    }
+    .profile-page .activity img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .profile-page .activity .date {
+        margin-top: 15px;
+    }
+}
