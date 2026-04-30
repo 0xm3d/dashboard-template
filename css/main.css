@@ -1056,3 +1056,23 @@ a {
         margin-top: 15px;
     }
 }
+
+/* Projects Page  */
+
+.projects-page .project .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.projects-page h4 {
+    font-weight: normal;
+}
+
+.projects-page .project img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
