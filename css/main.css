@@ -1059,20 +1059,123 @@ a {
 
 /* Projects Page  */
 
+.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .projects-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
 .projects-page .project .date {
     position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 10px;
+    top: 10px;
+    right: 10px;
 }
 
 .projects-page h4 {
     font-weight: normal;
 }
 
-.projects-page .project img {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
+.projects-page .team {
+    position: relative;
+    min-height: 80px;
 }
+
+.projects-page .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.projects-page .team a:nth-child(2) {
+    left: 25px;
+}
+
+.projects-page .team a:nth-child(3) {
+    left: 50px;
+}
+
+.projects-page .team a:nth-child(4) {
+    left: 75px;
+}
+
+.projects-page .team a:nth-child(5) {
+    left: 100px;
+}
+
+.projects-page .team a:hover {
+    z-index: 666;
+}
+
+.projects-page .project a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    border: 2px solid white;
+} 
+
+.projects-page .project .techs {
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .projects-page .project .techs  {
+        flex-direction: column;
+    }
+}
+
+
+.projects-page .project .techs span {
+    padding: 3px 8px;
+    margin-left: 5px;
+    width: fit-content;
+}
+
+@media (max-width: 767px) {
+    .projects-page .project .techs span:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.projects-page .project .info {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .projects-page .project .info {
+        flex-direction: column;
+    }
+}
+
+.projects-page .project .prog {
+    height: 8px;
+    width: 260px;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+    .projects-page .project .prog {
+        margin-bottom: 15px;
+    }
+}
+
+.projects-page .project .prog span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border: 6px;
+}
+
