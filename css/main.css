@@ -1065,7 +1065,7 @@ a {
 
 @media (max-width: 767px) {
     .projects-page {
-        grid-template-columns: minmax(200px, 1fr);
+        grid-template-columns: minmax(300px, 1fr);
         margin-left: 10px;
         margin-right: 10px;
         gap: 10px;
@@ -1176,6 +1176,6 @@ a {
     left: 0;
     top: 0;
     height: 100%;
-    border: 6px;
+    border-radius: 6px;
 }
 
