@@ -1179,3 +1179,38 @@ a {
     border-radius: 6px;
 }
 
+/* Courses Page  */
+
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.courses-page .cover img {
+    width: 100%;
+    
+}
+
+.courses-page .cover .icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.courses-page .desc {
+    border-bottom: 1px solid #eee;
+}
+
+.courses-page .info .btn {
+    position: absolute;
+    right: 50%;
+    bottom: 24px;
+    transform: translateX(50%);
+}
+
+.courses-page .info span i {
+    margin-right: 1px;
+}
